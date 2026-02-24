@@ -1,91 +1,503 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-     <link href="../assets/css/output.css" rel="stylesheet">
-    
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link href="../src/output.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      opacity: .55;
+    }
+  </style>
+
 </head>
 
 <body>
 
- 
-  <div class="navbar bg-white px-16 py-4 shadow-sm">
 
-    
-    <div class="flex-1">
-      <a class="flex items-center gap-2 text-2xl font-bold">
-        
-       <img src="/assets/img/1.svg" alt="123">
-        Furniro
+
+  <nav class="w-full bg-white shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+
+      <a href="#" class="flex items-center gap-3">
+        <img src="../assets/img/1.svg" alt="logo" class="h-8 w-auto" />
+        <span class="text-2xl font-bold text-black">Furniro</span>
       </a>
-    </div>
 
-    
-    <div class="flex-none">
-      <ul class="menu menu-horizontal px-1 text-base font-medium gap-6">
-        <li><a class="hover:text-yellow-600">Home</a></li>
-        <li><a class="hover:text-yellow-600">Shop</a></li>
-        <li><a class="hover:text-yellow-600">About</a></li>
-        <li><a class="hover:text-yellow-600">Contact</a></li>
+
+      <ul class="hidden md:flex items-center gap-16 text-sm font-medium text-black">
+        <li><a href="#" class="hover:text-yellow-600 transition">Home</a></li>
+        <li><a href="#" class="hover:text-yellow-600 transition">Shop</a></li>
+        <li><a href="#" class="hover:text-yellow-600 transition">About</a></li>
+        <li><a href="#" class="hover:text-yellow-600 transition">Contact</a></li>
       </ul>
-    </div>
 
-    
-    <div class="flex-none flex gap-6">
 
-      
-      <button class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" 
-          class="h-6 w-6" fill="none" 
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            d="M5.121 17.804A9 9 0 1118.879 17.804M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-        </svg>
-      </button>
+      <div class="hidden md:flex items-center gap-6 text-black">
 
-      
-      <button class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" 
-          class="h-6 w-6" fill="none" 
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            d="M21 21l-4.35-4.35m1.85-5.15a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-      </button>
+        <a href="#" class="hover:opacity-70 transition" aria-label="User">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </a>
 
-      
-      <button class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" 
-          class="h-6 w-6" fill="none" 
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            d="M4.318 6.318a4 4 0 015.656 0L12 8.344l2.026-2.026a4 4 0 115.656 5.656L12 20.656 4.318 11.974a4 4 0 010-5.656z" />
-        </svg>
-      </button>
 
-      
-      <button class="btn btn-ghost btn-circle">
-        <svg xmlns="http://www.w3.org/2000/svg" 
-          class="h-6 w-6" fill="none" 
-          viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="2" 
-            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-1.293 4.293A1 1 0 007 19h10a1 1 0 00.894-.553L21 13M9 21h.01M15 21h.01" />
+        <a href="#" class="hover:opacity-70 transition" aria-label="Search">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <path d="M21 21l-4.3-4.3"></path>
+          </svg>
+        </a>
+
+
+        <a href="#" class="hover:opacity-70 transition" aria-label="Wishlist">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path
+              d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z">
+            </path>
+          </svg>
+        </a>
+
+
+        <a href="#" class="hover:opacity-70 transition" aria-label="Cart">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 6h15l-1.5 9h-13z"></path>
+            <path d="M6 6l-2-2H1"></path>
+            <circle cx="9" cy="20" r="1"></circle>
+            <circle cx="18" cy="20" r="1"></circle>
+          </svg>
+        </a>
+      </div>
+
+
+      <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Menu">
+        <svg class="w-7 h-7 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
       </button>
 
     </div>
+  </nav>
+
+  <img src="../assets/img/2.png" alt="backgraound photo" class="w-full h-screen object-cover">
+
+  <div class="text-center">
+
+    <p class="text-5xl font-bold mt-9">Browse The Range</p>
+
   </div>
- 
+
+  <p class="text-center mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <section class="py-16">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="flex flex-col lg:flex-row gap-8">
+
+
+        <div class="flex-1 text-center">
+          <img src="../assets/img/Mask Group.png" class="w-full h-96 object-cover rounded-2xl">
+          <h3 class="mt-4 text-2xl font-semibold">Dining</h3>
+        </div>
+
+
+        <div class="flex-1 text-center">
+          <img src="../assets/img/Image-living room.png" class="w-full h-96 object-cover rounded-2xl">
+          <h3 class="mt-4 text-2xl font-semibold">Living</h3>
+        </div>
+
+
+        <div class="flex-1 text-center">
+          <img src="../assets/img/Mask Group (1).png" class="w-full h-96 object-cover rounded-2xl">
+          <h3 class="mt-4 text-2xl font-semibold">Bedroom</h3>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <div class="text-center">
+    <p class="text-5xl font-bold">Our Products</p>
+  </div>
+
+
+
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+
+          <img src="../assets/img/white room.png" alt="Slytherine"
+            class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+          <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+                <span>Share</span>
+              </button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+                <span>Compare</span>
+              </button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+                <span>Like</span>
+              </button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Slytherine</h3>
+          <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 2.500.000</span>
+            <span class="old-price text-sm">Rp 3.500.000</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="../assets/img/2.png" alt="Leviosa" />
+
+
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Leviosa</h3>
+          <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 2.500.000</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="../assets/img/sofaa.png" alt="Lolito" />
+
+
+
+          <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-50%</div>
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Lolito</h3>
+          <p class="text-base-content/60 text-sm">Luxury big sofa</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 7.000.000</span>
+            <span class="old-price text-sm">Rp 14.000.000</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="../assets/img/brown room.png" alt="Respira" />
+
+
+
+
+          <div class="badge badge-success text-green-600 absolute top-4 right-4 rounded-full px-3 py-3">New</div>
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Respira</h3>
+          <p class="text-base-content/60 text-sm">Outdoor bar table and stool</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 500.000</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="../assets/img/Mask Group.png" alt="Grifo" />
+
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Grifo</h3>
+          <p class="text-base-content/60 text-sm">Night lamp</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 1.500.000</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="../assets/img/gray sofaa.png" alt="Muggo" />
+
+
+
+          <div class="badge badge-success text-green-600 absolute top-4 right-4 rounded-full px-3 py-3">New</div>
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Muggo</h3>
+          <p class="text-base-content/60 text-sm">Small mug</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 150.000</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="../assets/img/Pingky.png" alt="Pinky" />
+
+
+
+          <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-50%</div>
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Pinky</h3>
+          <p class="text-base-content/60 text-sm">Cute bed set</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 7.000.000</span>
+            <span class="old-price text-sm">Rp 14.000.000</span>
+          </div>
+        </div>
+      </article>
+
+
+      <article class="card bg-base-100 shadow-sm rounded-none">
+        <figure class="relative group aspect-[4/3] overflow-hidden">
+          <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            src="../assets/img/Potty.png" alt="Potty" />
+
+
+
+          <div class="badge badge-success text-green-600 absolute top-4 right-4 rounded-full px-3 py-3">New</div>
+
+          <div
+            class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+            <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+              Add to cart
+            </button>
+
+            <div class="flex items-center gap-6 text-white/90 text-sm">
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+              <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+            </div>
+          </div>
+        </figure>
+
+        <div class="card-body p-5 gap-2">
+          <h3 class="text-xl font-semibold">Potty</h3>
+          <p class="text-base-content/60 text-sm">Minimalist flower pot</p>
+
+          <div class="mt-2 flex items-center gap-3">
+            <span class="font-bold">Rp 500.000</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+
+  <footer class="bg-white">
+
+    <div class="max-w-7xl mx-auto px-8 pt-16 pb-12">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+
+        <div>
+          <h3 class="text-2xl font-bold text-black">Funiro.</h3>
+          <p class="mt-8 text-sm leading-7 text-gray-400">
+            400 University Drive Suite 200 Coral<br />
+            Gables,<br />
+            FL 33134 USA
+          </p>
+        </div>
+
+
+        <div>
+          <p class="text-sm text-gray-400">Links</p>
+          <ul class="mt-8 space-y-6 text-sm font-medium text-black">
+            <li><a href="#" class="hover:opacity-80">Home</a></li>
+            <li><a href="#" class="hover:opacity-80">Shop</a></li>
+            <li><a href="#" class="hover:opacity-80">About</a></li>
+            <li><a href="#" class="hover:opacity-80">Contact</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <p class="text-sm text-gray-400">Help</p>
+          <ul class="mt-8 space-y-6 text-sm font-medium text-black">
+            <li><a href="#" class="hover:opacity-80">Payment Options</a></li>
+            <li><a href="#" class="hover:opacity-80">Returns</a></li>
+            <li><a href="#" class="hover:opacity-80">Privacy Policies</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <p class="text-sm text-gray-400">Newsletter</p>
+
+          <div class="mt-8 flex items-end gap-6">
+            <div class="flex-1">
+              <input type="email" placeholder="Enter Your Email Address"
+                class="w-full bg-transparent text-sm text-gray-700 placeholder:text-gray-400border-b border-black/30 focus:border-black outline-none pb-2" />
+
+
+
+            </div>
+
+            <button class="text-xs font-semibold tracking-wide text-black border-b border-black pb-2 hover:opacity-80">
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="h-px w-full bg-gray-200"></div>
+    </div>
+
+
+    <div class="max-w-7xl mx-auto px-8 py-8">
+
+      <p class="text-sm text-black">
+        2023 funiro. All rights reverved
+      </p>
+
+    </div>
+
+  </footer>
+
+
+
 </body>
 
 </html>
