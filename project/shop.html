@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shop</title>
   <link href="../src/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -86,10 +89,778 @@
       </button>
 
     </div>
+
   </nav>
-  </body>
+
+
+<main>
+
+  <section class="w-full">
+
+
+    <div class="relative h-[260px] w-full overflow-hidden">
+
+
+
+      <img src="../assets/img/Rectangle 1.png" alt="Shop Banner" class="absolute inset-0 h-full w-full object-cover">
+
+
+
+      <div class="relative flex h-full flex-col items-center justify-center text-center">
+        <h1 class="text-4xl font-semibold text-black">Shop</h1>
+
+        <div class="mt-2 flex items-center gap-2 text-sm text-black/80">
+          <a href="../project/index.html" class="font-medium hover:underline">Home</a>
+          <span class="text-black/50">›</span>
+          <span class="text-black/70">Shop</span>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="bg-[#F9F1E7]">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="flex flex-col gap-4 py-6 md:flex-row md:items-center md:justify-between">
+
+
+          <div class="flex flex-wrap items-center gap-5">
+
+            <button type="button"
+              class="inline-flex items-center gap-2 text-sm font-medium text-black/80 hover:text-black">
+              <i class="fa-solid fa-sliders"></i>
+              <span>Filter</span>
+            </button>
+
+            
+            <div class="flex items-center gap-2">
+              <button type="button" aria-label="Grid view"
+                class="h-10 w-10 rounded inline-flex items-center justify-center hover:bg-black/5">
+                <i class="fa-solid fa-border-all"></i>
+              </button>
+
+              <button type="button" aria-label="List view"
+                class="h-10 w-10 rounded inline-flex items-center justify-center hover:bg-black/5">
+                <i class="fa-regular fa-chart-bar"></i>
+              </button>
+            </div>
+
+
+            <div class="h-7 w-px bg-black/20"></div>
+
+
+            <p class="text-sm text-black/70">Showing 1-16 of 32 results</p>
+          </div>
+
+
+          <div class="flex flex-wrap items-center gap-6">
+            <div class="flex items-center gap-3">
+              <span class="text-sm text-black/80">Show</span>
+              <div class="h-12 w-16 bg-white flex items-center justify-center text-sm text-black/70">
+                16
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span class="text-sm text-black/80">Short by</span>
+              <div class="h-12 w-44 bg-white px-4 flex items-center justify-between text-sm text-black/60">
+                <span>Default</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4 py-15">
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="old-price text-sm">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="../assets/img/2.png" alt="Leviosa" />
+
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Leviosa</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="../assets/img/sofaa.png" alt="Lolito" />
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-50%</div>
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Lolito</h3>
+        <p class="text-base-content/60 text-sm">Luxury big sofa</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 7.000.000</span>
+          <span class="old-price text-sm">Rp 14.000.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="../assets/img/brown room.png" alt="Respira" />
+
+
+
+
+        <div class="badge badge-success text-green-600 absolute top-4 right-4 rounded-full px-3 py-3">New</div>
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Respira</h3>
+        <p class="text-base-content/60 text-sm">Outdoor bar table and stool</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="../assets/img/Mask Group.png" alt="Grifo" />
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Grifo</h3>
+        <p class="text-base-content/60 text-sm">Night lamp</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 1.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="../assets/img/gray sofaa.png" alt="Muggo" />
+
+
+
+        <div class="badge badge-success text-green-600 absolute top-4 right-4 rounded-full px-3 py-3">New</div>
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Muggo</h3>
+        <p class="text-base-content/60 text-sm">Small mug</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 150.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="../assets/img/Pingky.png" alt="Pinky" />
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-50%</div>
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Pinky</h3>
+        <p class="text-base-content/60 text-sm">Cute bed set</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 7.000.000</span>
+          <span class="old-price text-sm">Rp 14.000.000</span>
+        </div>
+      </div>
+    </article>
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+        <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          src="../assets/img/Potty.png" alt="Potty" />
+
+
+
+        <div class="badge badge-success text-green-600 absolute top-4 right-4 rounded-full px-3 py-3">New</div>
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Share</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Compare</button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">Like</button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Potty</h3>
+        <p class="text-base-content/60 text-sm">Minimalist flower pot</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 500.000</span>
+
+        </div>
+
+      </div>
+
+    </article>
+
+
+  </div>
+
 
   
+
+
+<div class="flex items-center justify-center gap-6 py-10">
+  
+  <button
+    type="button"
+    class="h-12 w-12 rounded-[10px] bg-[#B88A2B] text-white text-base font-medium">
+    1
+  </button>
+
+  
+  <button
+    type="button"
+    class="h-12 w-12 rounded-[10px] bg-[#F9F1E7] text-black text-base font-medium hover:bg-[#F3E6D3] transition">
+  2
+  </button>
+
+  
+  <button
+    type="button"
+    class="h-12 w-12 rounded-[10px] bg-[#F9F1E7] text-black text-base font-medium hover:bg-[#F3E6D3] transition">
+    3
+  </button>
+
+ 
+  <button
+    type="button"
+    class="h-12 px-7 rounded-[10px] bg-[#F9F1E7] text-black text-base font-medium hover:bg-[#F3E6D3] transition">
+  Next
+  </button>
+</div>
+
+
+
+</main>
 
   <footer>
 
@@ -164,3 +935,8 @@
     </div>
 
   </footer>
+
+
+</body>
+
+</html>
