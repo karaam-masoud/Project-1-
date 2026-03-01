@@ -8,16 +8,13 @@
   <link href="../src/css/output.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    crossorigin="anonymous" referrerpolicy="no-referrer" >
   <style>
     body {
       font-family: 'Poppins', sans-serif;
     }
 
-    .old-price {
-      text-decoration: line-through;
-      opacity: .55;
-    }
+    
   </style>
 
 </head>
@@ -31,7 +28,7 @@
 
 
       <a href="#" class="flex items-center gap-3">
-        <img src="../assets/img/1.svg" alt="logo" class="h-8 w-auto" />
+        <img src="../assets/img/1.svg" alt="logo" class="h-8 w-auto">
         <span class="text-2xl font-bold text-black">Furniro</span>
       </a>
 
@@ -67,7 +64,7 @@
       </div>
 
 
-      <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition" aria-label="Menu">
+      <button class="md:hidden p-2 rounded-lg hover:bg-gray-100 transition">
        <i class="fa-solid fa-bars"></i>
       </button>
 
@@ -115,12 +112,12 @@
 
             
             <div class="flex items-center gap-2">
-              <button type="button" aria-label="Grid view"
+              <button type="button" 
                 class="h-10 w-10 rounded inline-flex items-center justify-center hover:bg-black/5">
                 <i class="fa-solid fa-border-all"></i>
               </button>
 
-              <button type="button" aria-label="List view"
+              <button type="button"
                 class="h-10 w-10 rounded inline-flex items-center justify-center hover:bg-black/5">
                 <i class="fa-regular fa-chart-bar"></i>
               </button>
@@ -164,7 +161,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -199,7 +196,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -209,7 +206,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -244,7 +241,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -254,7 +251,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -289,7 +286,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -299,7 +296,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -334,53 +331,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
-        </div>
-      </div>
-    </article>
-
-
-
-    <article class="card bg-base-100 shadow-sm rounded-none">
-      <figure class="relative group aspect-[4/3] overflow-hidden">
-
-        <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
-
-
-
-
-
-        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
-
-
-        <div
-          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
-          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
-            Add to cart
-          </button>
-
-          <div class="flex items-center gap-6 text-white/90 text-sm">
-            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
-              <span>Share</span>
-            </button>
-            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
-              <span>Compare</span>
-            </button>
-            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
-              <span>Like</span>
-            </button>
-          </div>
-        </div>
-      </figure>
-
-      <div class="card-body p-5 gap-2">
-        <h3 class="text-xl font-semibold">Slytherine</h3>
-        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
-
-        <div class="mt-2 flex items-center gap-3">
-          <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -391,7 +342,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -426,7 +377,53 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
+        </div>
+      </div>
+    </article>
+
+
+
+    <article class="card bg-base-100 shadow-sm rounded-none">
+      <figure class="relative group aspect-[4/3] overflow-hidden">
+
+        <img src="../assets/img/white room.png" alt="Slytherine"
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
+
+
+
+
+
+        <div class="badge badge-error text-red-600 absolute top-4 right-4 rounded-full px-3 py-3">-30%</div>
+
+
+        <div
+          class="absolute inset-0 bg-black/55 opacity-0 transition-opacity duration-300 group-hover:opacity-100 flex flex-col items-center justify-center gap-4">
+          <button class="btn btn-sm bg-white text-black hover:bg-white border-0 rounded-none px-8">
+            Add to cart
+          </button>
+
+          <div class="flex items-center gap-6 text-white/90 text-sm">
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Share</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Compare</span>
+            </button>
+            <button class="btn btn-ghost btn-sm text-white hover:bg-white/10">
+              <span>Like</span>
+            </button>
+          </div>
+        </div>
+      </figure>
+
+      <div class="card-body p-5 gap-2">
+        <h3 class="text-xl font-semibold">Slytherine</h3>
+        <p class="text-base-content/60 text-sm">Stylish cafe chair</p>
+
+        <div class="mt-2 flex items-center gap-3">
+          <span class="font-bold">Rp 2.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -435,7 +432,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -470,7 +467,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -479,7 +476,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -514,7 +511,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -523,7 +520,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img src="../assets/img/white room.png" alt="Slytherine"
-          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" >
 
 
 
@@ -558,7 +555,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 2.500.000</span>
-          <span class="old-price text-sm">Rp 3.500.000</span>
+          <span class="line-through opacity-55">Rp 3.500.000</span>
         </div>
       </div>
     </article>
@@ -567,7 +564,7 @@
     <article class="card bg-base-100 shadow-sm rounded-none">
       <figure class="relative group aspect-[4/3] overflow-hidden">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src="../assets/img/2.png" alt="Leviosa" />
+          src="../assets/img/2.png" alt="Leviosa" >
 
 
 
@@ -599,7 +596,7 @@
     <article class="card bg-base-100 shadow-sm rounded-none">
       <figure class="relative group aspect-[4/3] overflow-hidden">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src="../assets/img/sofaa.png" alt="Lolito" />
+          src="../assets/img/sofaa.png" alt="Lolito" >
 
 
 
@@ -625,7 +622,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 7.000.000</span>
-          <span class="old-price text-sm">Rp 14.000.000</span>
+          <span class="line-through opacity-55">Rp 14.000.000</span>
         </div>
       </div>
     </article>
@@ -634,7 +631,7 @@
     <article class="card bg-base-100 shadow-sm rounded-none">
       <figure class="relative group aspect-[4/3] overflow-hidden">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src="../assets/img/brown room.png" alt="Respira" />
+          src="../assets/img/brown room.png" alt="Respira" >
 
 
 
@@ -670,7 +667,7 @@
       <figure class="relative group aspect-[4/3] overflow-hidden">
 
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src="../assets/img/Mask Group.png" alt="Grifo" />
+          src="../assets/img/Mask Group.png" alt="Grifo" >
 
 
         <div
@@ -701,7 +698,7 @@
     <article class="card bg-base-100 shadow-sm rounded-none">
       <figure class="relative group aspect-[4/3] overflow-hidden">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src="../assets/img/gray sofaa.png" alt="Muggo" />
+          src="../assets/img/gray sofaa.png" alt="Muggo" >
 
 
 
@@ -735,7 +732,7 @@
     <article class="card bg-base-100 shadow-sm rounded-none">
       <figure class="relative group aspect-[4/3] overflow-hidden">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src="../assets/img/Pingky.png" alt="Pinky" />
+          src="../assets/img/Pingky.png" alt="Pinky" >
 
 
 
@@ -761,7 +758,7 @@
 
         <div class="mt-2 flex items-center gap-3">
           <span class="font-bold">Rp 7.000.000</span>
-          <span class="old-price text-sm">Rp 14.000.000</span>
+          <span class="line-through opacity-55">Rp 14.000.000</span>
         </div>
       </div>
     </article>
@@ -770,7 +767,7 @@
     <article class="card bg-base-100 shadow-sm rounded-none">
       <figure class="relative group aspect-[4/3] overflow-hidden">
         <img class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          src="../assets/img/Potty.png" alt="Potty" />
+          src="../assets/img/Potty.png" alt="Potty" >
 
 
 
@@ -860,8 +857,8 @@
         <div>
           <h3 class="text-2xl font-bold text-black">Funiro.</h3>
           <p class="mt-8 text-sm leading-7 text-gray-400">
-            400 University Drive Suite 200 Coral<br />
-            Gables,<br />
+            400 University Drive Suite 200 Coral<br >
+            Gables,<br >
             FL 33134 USA
           </p>
         </div>
@@ -870,7 +867,7 @@
         <div>
           <p class="text-sm text-gray-400">Links</p>
           <ul class="mt-8 space-y-6 text-sm font-medium text-black">
-             <li><a href="../project/index.html" class="hover:opacity-80">Home</a></li>
+             <li><a href="../index.html" class="hover:opacity-80">Home</a></li>
             <li><a href="../project/shop.html" class="hover:opacity-80">Shop</a></li>
             <li><a href="#" class="hover:opacity-80">About</a></li>
             <li><a href="../project/contact.html" class="hover:opacity-80">Contact</a></li>
@@ -894,7 +891,7 @@
           <div class="mt-8 flex items-end gap-6">
             <div class="flex-1">
               <input type="email" placeholder="Enter Your Email Address"
-                class="w-full bg-transparent text-sm text-gray-700 placeholder:text-gray-400border-b border-black/30 focus:border-black outline-none pb-2" />
+                class="w-full bg-transparent text-sm text-gray-700 placeholder:text-gray-400border-b border-black/30 focus:border-black outline-none pb-2" >
 
 
 
